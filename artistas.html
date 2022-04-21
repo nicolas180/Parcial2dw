@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/artistas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img src="src/oasis.png" alt="" class="img-banner" />
+        <input type="checkbox" id="menu-bar" />
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="index.html">QUIENES PARTICIPAN</a></li>
+            <li><a href="pago.html">METODO DE PAGO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="iniciarSesion.html">INICIAR &nbsp SESION</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="banner2"></section>
+    <main>
+      <input type="button" value="Guardar" onclick="guardar()" />
+      <div id="contenido">
+        <div class="contenedorArtista1" name="contenedorArt"><div class="imagenArtista1"><img src="imagenes/' +
+          foto +
+          '"/></div><div class="playlist"><div id="playlistContenedor">' +
+          playlist +
+          '</div></div><div class="texto" id="texto"><h1>' +
+          nombre +
+          '</h1><br /><br /> <br /><h2 id="editable">' +
+          descripcion +
+          '</h2><input type="button" value="Editar" onclick="editar()" /> </div></div>
+      </div>
+      <!-- BOTON CRREAR -->
+      <input type="button" value="crear" onclick="crear()" />
+      <!-- --- -->
+    </main>
+
+    <script src="java/artistas.js"></script>
+  </body>
+</html>

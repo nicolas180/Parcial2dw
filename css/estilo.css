@@ -1,0 +1,391 @@
+.flex {
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+}
+h1 {
+  color: white;
+}
+
+body {
+}
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MuseoSansCond-500", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.banner {
+  background: url(../src/fondob.jpg);
+  min-height: 530px;
+  position: static;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+}
+.banner2 {
+  background: url(../src/fondoc.png);
+  min-height: 530px;
+  position: static;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(39, 37, 37);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.img-banner {
+  float: left;
+  max-width: 5%;
+  max-height: 5%;
+  margin: 6px 0;
+}
+
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+main {
+  margin: 1%;
+}
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu li {
+  border-left: 1px solid #fff;
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+}
+.menu li:hover {
+  background: rgba(0, 0, 0, 3);
+}
+
+#menu-bar {
+  display: none;
+}
+header label {
+  float: right;
+  height: 30%;
+  cursor: pointer;
+}
+header .contenedor {
+  display: table;
+}
+
+.contenedorArt {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+  height: 600px;
+  flex-wrap: wrap;
+  /*justify-content: space-evenly;*/
+  margin-top: 100px;
+}
+
+.contenedorArtista1 {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: none;
+  height: 700px;
+  flex-wrap: wrap;
+  /*justify-content: space-evenly;*/
+  margin-top: 100px;
+}
+.contenedorArtista2 {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: coral;
+  height: 700px;
+  flex-wrap: wrap;
+  /*justify-content: space-evenly;*/
+  margin-top: 100px;
+  justify-content: flex-end;
+}
+.imagenArtista1 {
+  background-image: repeating-linear-gradient(
+      -60deg,
+      #333333,
+      #333333 30px,
+      transparent 30px,
+      transparent 32px,
+      #333333 32px
+    ),
+    repeating-linear-gradient(
+      30deg,
+      #333333,
+      #333333 30px,
+      transparent 30px,
+      transparent 32px,
+      #333333 32px
+    ),
+    repeating-linear-gradient(
+      120deg,
+      #333333,
+      #333333 30px,
+      transparent 30px,
+      transparent 32px,
+      #333333 32px
+    ),
+    repeating-linear-gradient(
+      210deg,
+      #333333,
+      #333333 30px,
+      transparent 30px,
+      transparent 32px,
+      #333333 32px
+    );
+  background-size: 6px calc(100% + 64px), calc(100% + 64px) 6px,
+    6px calc(100% + 64px), calc(100% + 64px) 6px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 1s infinite linear;
+  width: 500px;
+  height: 400px;
+}
+@keyframes borderAnimation {
+  from {
+    background-position: 0 0, -64px 0, 100% -64px, 0 100%;
+  }
+  to {
+    background-position: 0 -64px, 0 0, 100% 0, -64px 100%;
+  }
+}
+.playlist {
+  background-color: none;
+  width: 500px;
+  height: 200px;
+}
+.texto {
+  height: 600px;
+  width: 67%;
+  background: black;
+  border: white 5px solid;
+  text-align: center;
+  padding-right: 600px;
+}
+.texto h1,
+.texto h2 {
+  color: white;
+}
+#editable {
+  text-align: left;
+}
+.texto2 {
+  height: 800px;
+  width: 100%;
+  background-color: violet;
+  padding-left: 600px;
+}
+.contenedorArtista2 {
+  display: flex;
+}
+
+.contenedorArtista3 {
+  display: flex;
+}
+
+.contenedorArtista4 {
+  display: flex;
+}
+
+.contenedorArtista5 {
+  display: flex;
+}
+
+/* Iniciar sesion */
+h2 {
+  color: white;
+}
+/* SUBIR IMG*/
+.prevPhoto {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  background: url(../images/portada_categoria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+}
+.prevPhoto label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.prevPhoto img {
+  width: 100%;
+  height: 100%;
+}
+.upimg,
+.notBlock {
+  display: none !important;
+}
+.errorArchivo {
+  font-size: 16px;
+  font-family: arial;
+  color: #cc0000;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.delPhoto {
+  color: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 10;
+}
+#tbl_list_productos img {
+  width: 50px;
+}
+.imgProductoDelete {
+  width: 175px;
+}
+/*SUBIR IMG*/
+
+/*PAGINA GALERIA*/
+
+.contenedorGaleria1 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  background-color: coral;
+  height: 1400px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.titulo1 {
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+}
+
+.titulo11 {
+  color: white;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.img1 {
+  width: 700px;
+  height: 500px;
+  background-color: green;
+  border-radius: 30px;
+}
+.img1 img {
+  border: 1px solid #000000;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+.img2 {
+  width: 700px;
+  height: 500px;
+  background-color: hotpink;
+  border-radius: 30px;
+}
+
+.img2 img {
+  border: 1px solid #000000;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.img3 {
+  width: 700px;
+  height: 500px;
+  background-color: indigo;
+  margin-top: 50px;
+}
+
+.img3 img {
+  border: 1px solid #000000;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.img4 {
+  width: 700px;
+  height: 500px;
+  background-color: indigo;
+  margin-top: 50px;
+}
+
+.img4 img {
+  border: 1px solid #000000;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+/*PAGINA GALERIA*/
+
+/*PAGINA ADMIN*/
+.contenedor-admin {
+  display: flex;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+.artista-admin {
+  background-color: rgb(28, 136, 238);
+  width: 600px;
+  height: 800px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 12px rgba(39, 37, 37, 0.4);
+  padding: 15px;
+}
+.galeria-admin {
+  width: 600px;
+  height: 800px;
+  background-color: coral;
+}

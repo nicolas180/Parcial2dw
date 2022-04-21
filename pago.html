@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/pago.css" />
+    <title>Comprar Boletas</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img src="src/oasis.png" alt="" class="img-banner" />
+        <input type="checkbox" id="menu-bar" />
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="artistas.html">QUIENES PARTICIPAN</a></li>
+            <li><a href="pago.html">METODO DE PAGO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="iniciarSesion.html">INICIAR &nbsp SESION</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="card">
+      <h1>Comprar Boletas</h1>
+      <form action="#">
+        <div class="input-item">
+          <label for="amount"> Cantidad Personas : </label>
+          <input type="text" id="amount" />
+        </div>
+
+        <div class="input-item">
+          <label for="discount-percentage"
+            >Introduce el codigo de descuento:</label
+          >
+
+          <input type="text" name="codigo" id="codigo" /><br />
+        </div>
+        <div class="trivia">
+          <a href="trivia.html">RESOLVER TRIVIA PARA GANAR UN DESCUENTO</a>
+        </div>
+
+        <div class="input-item">
+          <label for="discount-amount"> Total a pagar con descuento: </label>
+          <input type="text" id="discount-amount" disabled />
+        </div>
+
+        <div class="input-item">
+          <label for="pay" aria-disabled="true"> Pago final:</label>
+          <input type="text" id="pay" disabled />
+        </div>
+
+        <button type="submit" class="calculate" onclick="calcularPrecio()">
+          Realizar Compra
+        </button>
+        <input
+          type="reset"
+          value="Reiniciar"
+          onClick="window.location.reload()"
+          class="reset"
+        />
+      </form>
+    </div>
+
+    <script src="./java/pago.js"></script>
+  </body>
+</html>

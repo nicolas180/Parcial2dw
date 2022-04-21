@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "MuseoSansCond-500", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+header {
+  background: url(src/fondo.png);
+  width: 100%;
+  height: 100px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+body.correct {
+  --hue: var(--hue-correct);
+}
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0;
+  box-shadow: 0 0 10px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.btn {
+  --hue: var(--hue-neutral);
+  border: hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  color: white;
+  outline: none;
+}
+.btn:hover {
+  border-color: black;
+}
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+.btn-wrong {
+  --hue: var(--hue-wrong);
+}
+.btn-empezar,
+.btn-siguiente {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}

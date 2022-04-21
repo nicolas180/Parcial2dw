@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img src="src/oasis.png" alt="" class="img-banner" />
+        <input type="checkbox" id="menu-bar" />
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="artistas.html">QUIENES PARTICIPAN</a></li>
+            <li><a href="pago.html">METODO DE PAGO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="iniciarSesion.html">INICIAR &nbsp SESION</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br /><br />
+    <br />
+    <section class="contenedor-admin">
+      <div class="artista-admin">
+        <h1>Agregar un artista</h1>
+        <form action="" method="POST">
+          <br /><br />
+          <label for="artista">Nombre del artista: </label>
+          <input
+            type="text"
+            name="inputNombre"
+            id="inputNombre"
+            placeholder="Escribe el nombre del artista"
+          /><br /><br />
+          <label for="descripcion">Descripción:</label>
+          <br />
+          <textarea
+            name="inputDescripcion"
+            id="inputDescripcion"
+            cols="60"
+            rows="7"
+            placeholder="Agrega una descripción sobre el artista"
+          ></textarea
+          ><br /><br />
+          <!--SUBIR IMG-->
+          <div class="photo">
+            <label for="foto">Cargar imagen:</label>
+            <input type="file" name="foto" id="fotoid" />
+            <!--<div class="prevPhoto">
+              <span class="delPhoto notBlock">X</span>
+              <label for="foto"></label>
+              <div>
+                <img
+                  id="img"
+                  src="<?= media(); ?>/images/portada_categoria.png"
+                />
+              </div>
+            </div>
+            <div class="upimg">
+              <input type="file" name="foto" id="foto" />
+            </div>
+            <div id="form_alert"></div>
+            -->
+            <br /><br />
+            <label for="playlist">Embed<> de la playlist:</label><br />
+            <textarea
+              type="text"
+              name="playlist"
+              cols="30"
+              rows="4"
+              id="playlistInput"
+              placeholder="Copia y pega el código de Embed desde Spotify"
+            ></textarea>
+          </div>
+          <br />
+          <input type="button" value="Guardar" onclick="guardarArtista()" />
+          <!--SUBIR IMG-->
+        </form>
+      </div>
+      <!--<div class="galeria-admin">
+        <h1>galeria</h1>
+
+        
+        <div class="photo">
+          <label for="foto">Click para cargar una imagen</label>
+          <div class="prevPhoto">
+            <span class="delPhoto notBlock">X</span>
+            <label for="foto"></label>
+            <div>
+              <img
+                id="img"
+                src="<?= media(); ?>/images/portada_categoria.png"
+              />
+            </div>
+          </div>
+          <div class="upimg">
+            <input type="file" name="foto" id="foto" />
+          </div>
+          <div id="form_alert"></div>
+        </div>
+        
+        <input type="button" value="Guardar" />
+      </div>
+      -->
+    </section>
+    <script src="java/admin.js"></script>
+  </body>
+</html>
